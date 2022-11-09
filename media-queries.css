@@ -1,0 +1,116 @@
+/* *****Mobile Device********** */
+@media (min-width: 23em) {
+  .welcome {
+    background-size: 45rem;
+    /* background-position-x: 7rem; */
+    
+  }
+  .welcome-image {
+    max-width: 36rem;
+    right: 1rem;
+  }
+}
+/* *****Big Screen Mobile Device********** */
+
+@media (min-width: 28em) {
+  .welcome {
+    background-size: 62rem;
+    background-position: center;
+    height: 35rem;
+   
+
+  }
+  .first-container {
+    gap: 2rem;
+  }
+  
+  .welcome-image {
+   right: 6rem;
+    
+  }
+}
+/* *****Tablet ********** */
+
+@media (min-width: 38em) {
+
+.main-nav-list {
+  flex-direction: row;
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    position:inherit;
+    height: auto;
+    font-size:1.8rem ;
+  }
+  .hambuger-button {
+    display: none;
+  }
+  .first-container {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+  .welcome-text {
+    flex: 1;
+    order: 0;
+  }
+  .welcome {
+    background: url(/images/bg-intro-desktop.svg);
+    flex: 2;
+    background-size: 60rem;
+    background-repeat: no-repeat;
+    background-position: 0 -10rem;
+  }
+  .welcome-image {
+    right: 2rem;
+    max-width: 40rem;
+    height: 48rem;
+  }
+  .grid-4-col {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+/* *****Mini Laptop ********** */
+@media (min-width:43em) {
+  .request-btn {
+    display: inline-block;
+  }
+  .welcome {
+   background: none;
+  }
+
+  .grid-4-col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .article-container:nth-of-type(4) {
+    grid-column: 2/ 3;
+  }
+  .easybank-services:nth-of-type(4) {
+    grid-column: 2/ 3;
+  }
+  .footer-section {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+}
+
+@media (min-width:60em) {
+  .welcome {
+    flex: 1;
+  }
+  .grid-4-col {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .article-container:nth-of-type(4) {
+   grid-column: auto;
+  }
+  .easybank-services:nth-of-type(4) {
+    grid-column: auto;
+  }
+  .social-section {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem; 
+}
+
+
